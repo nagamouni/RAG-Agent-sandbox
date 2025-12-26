@@ -1,0 +1,90 @@
+{
+  "drug_id": "D003",
+  "drug_name": "Cytovara",
+  "indication": "Condition-Z",
+  "modality": "peptide",
+  "mechanism": "bispecific immune modulator",
+  "moa_short": "Engages two targets to rebalance immune signaling.",
+  "formulation": "vial for infusion",
+  "route": "intravenous",
+  "regimen": "3 mg/kg Q8W",
+  "trial_id": "AMGN-D003-201",
+  "phase": "Phase 3",
+  "arms": [
+    {
+      "name": "Cytovara 3 mg/kg Q8W",
+      "n": 283,
+      "dose": "3 mg/kg Q8W"
+    },
+    {
+      "name": "Placebo",
+      "n": 232,
+      "dose": "matching regimen"
+    }
+  ],
+  "population": "Adults with moderate-to-severe Condition-Z with inadequate response to standard therapy.",
+  "key_inclusion": [
+    "Confirmed diagnosis per protocol definition",
+    "Baseline disease activity above threshold",
+    "Stable background therapy for \u22654 weeks"
+  ],
+  "key_exclusion": [
+    "Severe uncontrolled comorbidity (per protocol)",
+    "Recent major surgery within 12 weeks",
+    "Known hypersensitivity to components"
+  ],
+  "results": {
+    "endpoint_primary": "Proportion achieving Response-50 at Week 16",
+    "endpoint_secondary": "Quality-of-life improvement at Week 12",
+    "primary_effect": "62.9% vs 36.7% (\u0394 26.2%)",
+    "primary_pvalue": 0.03351716286975333,
+    "primary_ci": "[18.2%, 34.2%]",
+    "secondary_effect": "Did not meet prespecified significance threshold",
+    "discontinuation_rate_pct": 4.053862150335587
+  },
+  "safety": {
+    "common_ae": [
+      [
+        "Elevated ALT",
+        7.065855432689738
+      ],
+      [
+        "Fatigue",
+        5.568797933055029
+      ],
+      [
+        "Dizziness",
+        2.5046612282736156
+      ],
+      [
+        "Arthralgia",
+        2.5402725727757787
+      ],
+      [
+        "Rash",
+        2.0
+      ],
+      [
+        "Injection-site reaction",
+        2.0
+      ]
+    ],
+    "serious_ae_rate_pct": 2.043805900687911,
+    "discontinuation_ae_rate_pct": 2.1666804184043054,
+    "warnings": [
+      "Monitor for hypersensitivity reactions.",
+      "Assess for infection risk in susceptible patients.",
+      "Consider hepatic monitoring if clinically indicated."
+    ],
+    "contraindications": [
+      "Known hypersensitivity to active substance or excipients."
+    ]
+  },
+  "monitoring": [
+    "Baseline labs per protocol (CBC, CMP)",
+    "Periodic assessment of liver enzymes",
+    "Clinical monitoring for infections"
+  ],
+  "version": "v2.9",
+  "doc_date": "2025-12-26"
+}

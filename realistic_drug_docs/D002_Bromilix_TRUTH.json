@@ -1,0 +1,90 @@
+{
+  "drug_id": "D002",
+  "drug_name": "Bromilix",
+  "indication": "Condition-Y",
+  "modality": "monoclonal antibody",
+  "mechanism": "selective pathway inhibitor",
+  "moa_short": "Inhibits a disease-relevant signaling pathway to reduce downstream activation.",
+  "formulation": "vial for infusion",
+  "route": "intravenous",
+  "regimen": "10 mg/kg Q4W",
+  "trial_id": "AMGN-D002-401",
+  "phase": "Phase 3",
+  "arms": [
+    {
+      "name": "Bromilix 10 mg/kg Q4W",
+      "n": 194,
+      "dose": "10 mg/kg Q4W"
+    },
+    {
+      "name": "Placebo",
+      "n": 186,
+      "dose": "matching regimen"
+    }
+  ],
+  "population": "Adults with moderate-to-severe Condition-Y with inadequate response to standard therapy.",
+  "key_inclusion": [
+    "Confirmed diagnosis per protocol definition",
+    "Baseline disease activity above threshold",
+    "Stable background therapy for \u22654 weeks"
+  ],
+  "key_exclusion": [
+    "Severe uncontrolled comorbidity (per protocol)",
+    "Recent major surgery within 12 weeks",
+    "Known hypersensitivity to components"
+  ],
+  "results": {
+    "endpoint_primary": "Proportion achieving Response-50 at Week 16",
+    "endpoint_secondary": "Quality-of-life improvement at Week 12",
+    "primary_effect": "52.5% vs 27.8% (\u0394 24.7%)",
+    "primary_pvalue": 0.04649170394403939,
+    "primary_ci": "[16.7%, 32.7%]",
+    "secondary_effect": "Numerically favored active arm; supportive trend",
+    "discontinuation_rate_pct": 3.7366950971619284
+  },
+  "safety": {
+    "common_ae": [
+      [
+        "Nausea",
+        7.931071198190044
+      ],
+      [
+        "Headache",
+        6.38193719148645
+      ],
+      [
+        "Elevated ALT",
+        6.04344073239551
+      ],
+      [
+        "Rash",
+        2.0
+      ],
+      [
+        "Diarrhea",
+        2.0
+      ],
+      [
+        "Injection-site reaction",
+        2.0
+      ]
+    ],
+    "serious_ae_rate_pct": 3.6095284192712147,
+    "discontinuation_ae_rate_pct": 3.2810266565070654,
+    "warnings": [
+      "Monitor for hypersensitivity reactions.",
+      "Assess for infection risk in susceptible patients.",
+      "Consider hepatic monitoring if clinically indicated."
+    ],
+    "contraindications": [
+      "Known hypersensitivity to active substance or excipients."
+    ]
+  },
+  "monitoring": [
+    "Baseline labs per protocol (CBC, CMP)",
+    "Periodic assessment of liver enzymes",
+    "Clinical monitoring for infections"
+  ],
+  "version": "v1.4",
+  "doc_date": "2025-12-26"
+}

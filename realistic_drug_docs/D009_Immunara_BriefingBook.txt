@@ -1,0 +1,153 @@
+Immunara (D009) — Synthetic Briefing Book
+Trial: AMGN-D009-302 | Phase 2 | Version v2.8 | Date 2025-12-26
+================================================================================
+
+[PAGE 1/10] 1. Executive Summary & Key Messages
+--------------------------------------------------------------------------------
+Indication: Immunology-F
+Modality: monoclonal antibody
+Formulation/Route: vial for infusion / intravenous
+Planned regimen (synthetic): 3 mg/kg Q4W
+
+Key messages:
+- Immunara is being developed for Immunology-F.
+- Primary endpoint: Change from baseline in Symptom Score at Week 12.
+- Primary result: LS mean difference -1.86 (Drug − Placebo), p=0.037.
+- Safety: common AEs include Upper respiratory infection, Headache, Rash.
+
+
+
+[PAGE 2/10] 2. Background & Unmet Need
+--------------------------------------------------------------------------------
+Immunology-F is associated with persistent symptoms and variable response to standard therapy.
+This synthetic briefing book is structured to support retrieval-augmented generation (RAG) practice.
+
+Document governance (synthetic):
+- Document version: v2.8
+- Program identifier: AMGN-D009-302
+- Intended use: internal training / prototype only
+
+
+
+[PAGE 3/10] 3. Mechanism of Action
+--------------------------------------------------------------------------------
+Proposed mechanism: ligand neutralizing antibody.
+MOA summary: Neutralizes a circulating ligand to reduce pathway activation.
+
+Biology notes (synthetic):
+- Target pathway is assumed disease-relevant for training purposes.
+- Biomarker shifts are described as supportive evidence in later pages.
+
+
+
+[PAGE 4/10] 4. Study Design
+--------------------------------------------------------------------------------
+Trial: AMGN-D009-302 (Phase 2), randomized, double-blind, placebo-controlled (synthetic).
+Population: Adults with moderate-to-severe Immunology-F with inadequate response to standard therapy.
+
+Arms:
+- Arm: Immunara 3 mg/kg Q4W, n=214
+- Arm: Placebo, n=206
+
+Key inclusion criteria:
+- Confirmed diagnosis per protocol definition
+- Baseline disease activity above threshold
+- Stable background therapy for ≥4 weeks
+
+Key exclusion criteria:
+- Severe uncontrolled comorbidity (per protocol)
+- Recent major surgery within 12 weeks
+- Known hypersensitivity to components
+
+
+[PAGE 5/10] 5. Endpoints & Analysis Overview
+--------------------------------------------------------------------------------
+Primary endpoint: Change from baseline in Symptom Score at Week 12
+Secondary endpoint: Time to flare through Week 24
+
+Analysis notes (synthetic):
+- Primary analysis uses an intention-to-treat estimand.
+- Missing data handled via multiple imputation (illustrative).
+- Multiplicity control via hierarchical testing (illustrative).
+
+
+
+[PAGE 6/10] 6. Efficacy Results
+--------------------------------------------------------------------------------
+Primary outcome:
+- Result: LS mean difference -1.86 (Drug − Placebo)
+- 95% CI: [-2.26, -1.46]
+- p-value: 0.037
+
+Secondary outcome:
+- Interpretation: Numerically favored active arm; supportive trend
+
+Discontinuations:
+- Overall discontinuation rate (synthetic): 11.1%
+
+
+
+[PAGE 7/10] 7. Safety Summary (TEAEs)
+--------------------------------------------------------------------------------
+Safety overview (synthetic):
+- Serious AE rate: 3.0%
+- Discontinuation due to AE: 1.1%
+
+Common adverse events listed below.
+
+
+Common TEAEs (synthetic):
+- Upper respiratory infection: 11.8%
+- Headache: 8.1%
+- Rash: 8.0%
+- Arthralgia: 6.3%
+- Diarrhea: 6.2%
+- Nausea: 6.8%
+
+
+[PAGE 8/10] 8. Dosing & Administration
+--------------------------------------------------------------------------------
+Route: intravenous
+Formulation: vial for infusion
+Regimen: 3 mg/kg Q4W
+
+Administration notes (synthetic):
+- Missed dose: take as soon as remembered unless near next scheduled dose.
+- Storage: controlled room temperature unless specified otherwise.
+- Concomitant therapy: per protocol allowances.
+
+
+
+[PAGE 9/10] 9. Contraindications, Warnings & Monitoring
+--------------------------------------------------------------------------------
+Contraindications:
+- Known hypersensitivity to active substance or excipients.
+
+Warnings/Precautions:
+- Monitor for hypersensitivity reactions.
+- Assess for infection risk in susceptible patients.
+- Consider hepatic monitoring if clinically indicated.
+
+Monitoring recommendations (synthetic):
+- Baseline labs per protocol (CBC, CMP)
+- Periodic assessment of liver enzymes
+- Clinical monitoring for infections
+
+
+[PAGE 10/10] 10. Appendix: Abbreviations & Traceability
+--------------------------------------------------------------------------------
+Abbreviations:
+- AE: Adverse event
+- SAE: Serious adverse event
+- TEAE: Treatment-emergent adverse event
+- ITT: Intention-to-treat
+
+Traceability fields (synthetic):
+- Drug ID: D009
+- Trial ID: AMGN-D009-302
+- Document version: v2.8
+- Date: 2025-12-26
+
+Note: This document is synthetic and intended only for RAG/agent practice.
+
+

@@ -1,0 +1,153 @@
+Bromilix (D002) — Synthetic Briefing Book
+Trial: AMGN-D002-401 | Phase 3 | Version v1.4 | Date 2025-12-26
+================================================================================
+
+[PAGE 1/10] 1. Executive Summary & Key Messages
+--------------------------------------------------------------------------------
+Indication: Condition-Y
+Modality: monoclonal antibody
+Formulation/Route: vial for infusion / intravenous
+Planned regimen (synthetic): 10 mg/kg Q4W
+
+Key messages:
+- Bromilix is being developed for Condition-Y.
+- Primary endpoint: Proportion achieving Response-50 at Week 16.
+- Primary result: 52.5% vs 27.8% (Δ 24.7%), p=0.046.
+- Safety: common AEs include Nausea, Headache, Elevated ALT.
+
+
+
+[PAGE 2/10] 2. Background & Unmet Need
+--------------------------------------------------------------------------------
+Condition-Y is associated with persistent symptoms and variable response to standard therapy.
+This synthetic briefing book is structured to support retrieval-augmented generation (RAG) practice.
+
+Document governance (synthetic):
+- Document version: v1.4
+- Program identifier: AMGN-D002-401
+- Intended use: internal training / prototype only
+
+
+
+[PAGE 3/10] 3. Mechanism of Action
+--------------------------------------------------------------------------------
+Proposed mechanism: selective pathway inhibitor.
+MOA summary: Inhibits a disease-relevant signaling pathway to reduce downstream activation.
+
+Biology notes (synthetic):
+- Target pathway is assumed disease-relevant for training purposes.
+- Biomarker shifts are described as supportive evidence in later pages.
+
+
+
+[PAGE 4/10] 4. Study Design
+--------------------------------------------------------------------------------
+Trial: AMGN-D002-401 (Phase 3), randomized, double-blind, placebo-controlled (synthetic).
+Population: Adults with moderate-to-severe Condition-Y with inadequate response to standard therapy.
+
+Arms:
+- Arm: Bromilix 10 mg/kg Q4W, n=194
+- Arm: Placebo, n=186
+
+Key inclusion criteria:
+- Confirmed diagnosis per protocol definition
+- Baseline disease activity above threshold
+- Stable background therapy for ≥4 weeks
+
+Key exclusion criteria:
+- Severe uncontrolled comorbidity (per protocol)
+- Recent major surgery within 12 weeks
+- Known hypersensitivity to components
+
+
+[PAGE 5/10] 5. Endpoints & Analysis Overview
+--------------------------------------------------------------------------------
+Primary endpoint: Proportion achieving Response-50 at Week 16
+Secondary endpoint: Quality-of-life improvement at Week 12
+
+Analysis notes (synthetic):
+- Primary analysis uses an intention-to-treat estimand.
+- Missing data handled via multiple imputation (illustrative).
+- Multiplicity control via hierarchical testing (illustrative).
+
+
+
+[PAGE 6/10] 6. Efficacy Results
+--------------------------------------------------------------------------------
+Primary outcome:
+- Result: 52.5% vs 27.8% (Δ 24.7%)
+- 95% CI: [16.7%, 32.7%]
+- p-value: 0.046
+
+Secondary outcome:
+- Interpretation: Numerically favored active arm; supportive trend
+
+Discontinuations:
+- Overall discontinuation rate (synthetic): 3.7%
+
+
+
+[PAGE 7/10] 7. Safety Summary (TEAEs)
+--------------------------------------------------------------------------------
+Safety overview (synthetic):
+- Serious AE rate: 3.6%
+- Discontinuation due to AE: 3.3%
+
+Common adverse events listed below.
+
+
+Common TEAEs (synthetic):
+- Nausea: 7.9%
+- Headache: 6.4%
+- Elevated ALT: 6.0%
+- Rash: 2.0%
+- Diarrhea: 2.0%
+- Injection-site reaction: 2.0%
+
+
+[PAGE 8/10] 8. Dosing & Administration
+--------------------------------------------------------------------------------
+Route: intravenous
+Formulation: vial for infusion
+Regimen: 10 mg/kg Q4W
+
+Administration notes (synthetic):
+- Missed dose: take as soon as remembered unless near next scheduled dose.
+- Storage: controlled room temperature unless specified otherwise.
+- Concomitant therapy: per protocol allowances.
+
+
+
+[PAGE 9/10] 9. Contraindications, Warnings & Monitoring
+--------------------------------------------------------------------------------
+Contraindications:
+- Known hypersensitivity to active substance or excipients.
+
+Warnings/Precautions:
+- Monitor for hypersensitivity reactions.
+- Assess for infection risk in susceptible patients.
+- Consider hepatic monitoring if clinically indicated.
+
+Monitoring recommendations (synthetic):
+- Baseline labs per protocol (CBC, CMP)
+- Periodic assessment of liver enzymes
+- Clinical monitoring for infections
+
+
+[PAGE 10/10] 10. Appendix: Abbreviations & Traceability
+--------------------------------------------------------------------------------
+Abbreviations:
+- AE: Adverse event
+- SAE: Serious adverse event
+- TEAE: Treatment-emergent adverse event
+- ITT: Intention-to-treat
+
+Traceability fields (synthetic):
+- Drug ID: D002
+- Trial ID: AMGN-D002-401
+- Document version: v1.4
+- Date: 2025-12-26
+
+Note: This document is synthetic and intended only for RAG/agent practice.
+
+

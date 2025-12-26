@@ -1,0 +1,90 @@
+{
+  "drug_id": "D005",
+  "drug_name": "Erythron",
+  "indication": "Hematology-B",
+  "modality": "small molecule",
+  "mechanism": "ligand neutralizing antibody",
+  "moa_short": "Neutralizes a circulating ligand to reduce pathway activation.",
+  "formulation": "tablet",
+  "route": "oral",
+  "regimen": "50 mg QD",
+  "trial_id": "AMGN-D005-302",
+  "phase": "Phase 3",
+  "arms": [
+    {
+      "name": "Erythron 50 mg QD",
+      "n": 238,
+      "dose": "50 mg QD"
+    },
+    {
+      "name": "Placebo",
+      "n": 227,
+      "dose": "matching regimen"
+    }
+  ],
+  "population": "Adults with moderate-to-severe Hematology-B with inadequate response to standard therapy.",
+  "key_inclusion": [
+    "Confirmed diagnosis per protocol definition",
+    "Baseline disease activity above threshold",
+    "Stable background therapy for \u22654 weeks"
+  ],
+  "key_exclusion": [
+    "Severe uncontrolled comorbidity (per protocol)",
+    "Recent major surgery within 12 weeks",
+    "Known hypersensitivity to components"
+  ],
+  "results": {
+    "endpoint_primary": "Change from baseline in Symptom Score at Week 12",
+    "endpoint_secondary": "Durable response at Week 24",
+    "primary_effect": "LS mean difference -2.06 (Drug \u2212 Placebo)",
+    "primary_pvalue": 0.0013769700187049629,
+    "primary_ci": "[-2.46, -1.66]",
+    "secondary_effect": "Did not meet prespecified significance threshold",
+    "discontinuation_rate_pct": 4.4529474947378835
+  },
+  "safety": {
+    "common_ae": [
+      [
+        "Arthralgia",
+        18.134408484443277
+      ],
+      [
+        "Rash",
+        16.309853220028923
+      ],
+      [
+        "Fatigue",
+        16.218173032735592
+      ],
+      [
+        "Elevated ALT",
+        13.663236625833935
+      ],
+      [
+        "Upper respiratory infection",
+        12.141974286566574
+      ],
+      [
+        "Dizziness",
+        9.03128828639429
+      ]
+    ],
+    "serious_ae_rate_pct": 4.836829594359973,
+    "discontinuation_ae_rate_pct": 5.030392923928337,
+    "warnings": [
+      "Monitor for hypersensitivity reactions.",
+      "Assess for infection risk in susceptible patients.",
+      "Consider hepatic monitoring if clinically indicated."
+    ],
+    "contraindications": [
+      "Known hypersensitivity to active substance or excipients."
+    ]
+  },
+  "monitoring": [
+    "Baseline labs per protocol (CBC, CMP)",
+    "Periodic assessment of liver enzymes",
+    "Clinical monitoring for infections"
+  ],
+  "version": "v2.3",
+  "doc_date": "2025-12-26"
+}

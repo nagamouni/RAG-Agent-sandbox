@@ -1,0 +1,153 @@
+Fenvora (D006) — Synthetic Briefing Book
+Trial: AMGN-D006-201 | Phase 2 | Version v2.1 | Date 2025-12-26
+================================================================================
+
+[PAGE 1/10] 1. Executive Summary & Key Messages
+--------------------------------------------------------------------------------
+Indication: Oncology-C
+Modality: antibody-drug conjugate
+Formulation/Route: prefilled syringe / subcutaneous
+Planned regimen (synthetic): 300 mg Q2W
+
+Key messages:
+- Fenvora is being developed for Oncology-C.
+- Primary endpoint: Change from baseline in Symptom Score at Week 12.
+- Primary result: LS mean difference -1.35 (Drug − Placebo), p=0.023.
+- Safety: common AEs include Fatigue, Upper respiratory infection, Arthralgia.
+
+
+
+[PAGE 2/10] 2. Background & Unmet Need
+--------------------------------------------------------------------------------
+Oncology-C is associated with persistent symptoms and variable response to standard therapy.
+This synthetic briefing book is structured to support retrieval-augmented generation (RAG) practice.
+
+Document governance (synthetic):
+- Document version: v2.1
+- Program identifier: AMGN-D006-201
+- Intended use: internal training / prototype only
+
+
+
+[PAGE 3/10] 3. Mechanism of Action
+--------------------------------------------------------------------------------
+Proposed mechanism: targeted receptor antagonist.
+MOA summary: Blocks receptor-mediated signaling to reduce disease activity.
+
+Biology notes (synthetic):
+- Target pathway is assumed disease-relevant for training purposes.
+- Biomarker shifts are described as supportive evidence in later pages.
+
+
+
+[PAGE 4/10] 4. Study Design
+--------------------------------------------------------------------------------
+Trial: AMGN-D006-201 (Phase 2), randomized, double-blind, placebo-controlled (synthetic).
+Population: Adults with moderate-to-severe Oncology-C with inadequate response to standard therapy.
+
+Arms:
+- Arm: Fenvora 300 mg Q2W, n=186
+- Arm: Placebo, n=177
+
+Key inclusion criteria:
+- Confirmed diagnosis per protocol definition
+- Baseline disease activity above threshold
+- Stable background therapy for ≥4 weeks
+
+Key exclusion criteria:
+- Severe uncontrolled comorbidity (per protocol)
+- Recent major surgery within 12 weeks
+- Known hypersensitivity to components
+
+
+[PAGE 5/10] 5. Endpoints & Analysis Overview
+--------------------------------------------------------------------------------
+Primary endpoint: Change from baseline in Symptom Score at Week 12
+Secondary endpoint: Time to flare through Week 24
+
+Analysis notes (synthetic):
+- Primary analysis uses an intention-to-treat estimand.
+- Missing data handled via multiple imputation (illustrative).
+- Multiplicity control via hierarchical testing (illustrative).
+
+
+
+[PAGE 6/10] 6. Efficacy Results
+--------------------------------------------------------------------------------
+Primary outcome:
+- Result: LS mean difference -1.35 (Drug − Placebo)
+- 95% CI: [-1.75, -0.95]
+- p-value: 0.023
+
+Secondary outcome:
+- Interpretation: Met nominal significance in hierarchical testing
+
+Discontinuations:
+- Overall discontinuation rate (synthetic): 7.0%
+
+
+
+[PAGE 7/10] 7. Safety Summary (TEAEs)
+--------------------------------------------------------------------------------
+Safety overview (synthetic):
+- Serious AE rate: 1.8%
+- Discontinuation due to AE: 4.9%
+
+Common adverse events listed below.
+
+
+Common TEAEs (synthetic):
+- Fatigue: 9.3%
+- Upper respiratory infection: 6.4%
+- Arthralgia: 5.6%
+- Diarrhea: 6.0%
+- Rash: 2.0%
+- Headache: 2.0%
+
+
+[PAGE 8/10] 8. Dosing & Administration
+--------------------------------------------------------------------------------
+Route: subcutaneous
+Formulation: prefilled syringe
+Regimen: 300 mg Q2W
+
+Administration notes (synthetic):
+- Missed dose: take as soon as remembered unless near next scheduled dose.
+- Storage: controlled room temperature unless specified otherwise.
+- Concomitant therapy: per protocol allowances.
+
+
+
+[PAGE 9/10] 9. Contraindications, Warnings & Monitoring
+--------------------------------------------------------------------------------
+Contraindications:
+- Known hypersensitivity to active substance or excipients.
+
+Warnings/Precautions:
+- Monitor for hypersensitivity reactions.
+- Assess for infection risk in susceptible patients.
+- Consider hepatic monitoring if clinically indicated.
+
+Monitoring recommendations (synthetic):
+- Baseline labs per protocol (CBC, CMP)
+- Periodic assessment of liver enzymes
+- Clinical monitoring for infections
+
+
+[PAGE 10/10] 10. Appendix: Abbreviations & Traceability
+--------------------------------------------------------------------------------
+Abbreviations:
+- AE: Adverse event
+- SAE: Serious adverse event
+- TEAE: Treatment-emergent adverse event
+- ITT: Intention-to-treat
+
+Traceability fields (synthetic):
+- Drug ID: D006
+- Trial ID: AMGN-D006-201
+- Document version: v2.1
+- Date: 2025-12-26
+
+Note: This document is synthetic and intended only for RAG/agent practice.
+
+

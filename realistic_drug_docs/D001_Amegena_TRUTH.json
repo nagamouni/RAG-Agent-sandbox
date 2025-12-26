@@ -1,0 +1,90 @@
+{
+  "drug_id": "D001",
+  "drug_name": "Amegena",
+  "indication": "Condition-X",
+  "modality": "small molecule",
+  "mechanism": "ligand neutralizing antibody",
+  "moa_short": "Neutralizes a circulating ligand to reduce pathway activation.",
+  "formulation": "tablet",
+  "route": "oral",
+  "regimen": "150 mg BID",
+  "trial_id": "AMGN-D001-201",
+  "phase": "Phase 2",
+  "arms": [
+    {
+      "name": "Amegena 150 mg BID",
+      "n": 240,
+      "dose": "150 mg BID"
+    },
+    {
+      "name": "Placebo",
+      "n": 254,
+      "dose": "matching regimen"
+    }
+  ],
+  "population": "Adults with moderate-to-severe Condition-X with inadequate response to standard therapy.",
+  "key_inclusion": [
+    "Confirmed diagnosis per protocol definition",
+    "Baseline disease activity above threshold",
+    "Stable background therapy for \u22654 weeks"
+  ],
+  "key_exclusion": [
+    "Severe uncontrolled comorbidity (per protocol)",
+    "Recent major surgery within 12 weeks",
+    "Known hypersensitivity to components"
+  ],
+  "results": {
+    "endpoint_primary": "Mean change in Composite Index at Week 24",
+    "endpoint_secondary": "Durable response at Week 24",
+    "primary_effect": "LS mean difference -0.93 (Drug \u2212 Placebo)",
+    "primary_pvalue": 0.011865327252205808,
+    "primary_ci": "[-1.33, -0.53]",
+    "secondary_effect": "Met nominal significance in hierarchical testing",
+    "discontinuation_rate_pct": 3.6286988121715704
+  },
+  "safety": {
+    "common_ae": [
+      [
+        "Diarrhea",
+        13.877745594595824
+      ],
+      [
+        "Injection-site reaction",
+        12.776956548642483
+      ],
+      [
+        "Fatigue",
+        9.802839548396165
+      ],
+      [
+        "Elevated ALT",
+        9.647471631684706
+      ],
+      [
+        "Dizziness",
+        4.516380532185682
+      ],
+      [
+        "Upper respiratory infection",
+        5.131861175625088
+      ]
+    ],
+    "serious_ae_rate_pct": 2.6757889422657906,
+    "discontinuation_ae_rate_pct": 3.738722328547789,
+    "warnings": [
+      "Monitor for hypersensitivity reactions.",
+      "Assess for infection risk in susceptible patients.",
+      "Consider hepatic monitoring if clinically indicated."
+    ],
+    "contraindications": [
+      "Known hypersensitivity to active substance or excipients."
+    ]
+  },
+  "monitoring": [
+    "Baseline labs per protocol (CBC, CMP)",
+    "Periodic assessment of liver enzymes",
+    "Clinical monitoring for infections"
+  ],
+  "version": "v1.9",
+  "doc_date": "2025-12-26"
+}

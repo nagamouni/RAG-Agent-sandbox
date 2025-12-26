@@ -1,0 +1,90 @@
+{
+  "drug_id": "D008",
+  "drug_name": "Hepatrel",
+  "indication": "Liver-E",
+  "modality": "siRNA therapy",
+  "mechanism": "gene expression silencer",
+  "moa_short": "Reduces target mRNA to decrease protein expression.",
+  "formulation": "prefilled syringe",
+  "route": "subcutaneous",
+  "regimen": "100 mg Q4W",
+  "trial_id": "AMGN-D008-401",
+  "phase": "Phase 2",
+  "arms": [
+    {
+      "name": "Hepatrel 100 mg Q4W",
+      "n": 237,
+      "dose": "100 mg Q4W"
+    },
+    {
+      "name": "Placebo",
+      "n": 208,
+      "dose": "matching regimen"
+    }
+  ],
+  "population": "Adults with moderate-to-severe Liver-E with inadequate response to standard therapy.",
+  "key_inclusion": [
+    "Confirmed diagnosis per protocol definition",
+    "Baseline disease activity above threshold",
+    "Stable background therapy for \u22654 weeks"
+  ],
+  "key_exclusion": [
+    "Severe uncontrolled comorbidity (per protocol)",
+    "Recent major surgery within 12 weeks",
+    "Known hypersensitivity to components"
+  ],
+  "results": {
+    "endpoint_primary": "Mean change in Composite Index at Week 24",
+    "endpoint_secondary": "Durable response at Week 24",
+    "primary_effect": "LS mean difference -1.11 (Drug \u2212 Placebo)",
+    "primary_pvalue": 0.01630907060444526,
+    "primary_ci": "[-1.51, -0.71]",
+    "secondary_effect": "Numerically favored active arm; supportive trend",
+    "discontinuation_rate_pct": 4.55112040992104
+  },
+  "safety": {
+    "common_ae": [
+      [
+        "Arthralgia",
+        9.526454050028057
+      ],
+      [
+        "Rash",
+        7.594591037320784
+      ],
+      [
+        "Elevated ALT",
+        6.078927125924658
+      ],
+      [
+        "Diarrhea",
+        4.945344368180757
+      ],
+      [
+        "Upper respiratory infection",
+        2.975157264620878
+      ],
+      [
+        "Injection-site reaction",
+        2.0
+      ]
+    ],
+    "serious_ae_rate_pct": 3.399784469106269,
+    "discontinuation_ae_rate_pct": 3.3901815901604238,
+    "warnings": [
+      "Monitor for hypersensitivity reactions.",
+      "Assess for infection risk in susceptible patients.",
+      "Consider hepatic monitoring if clinically indicated."
+    ],
+    "contraindications": [
+      "Known hypersensitivity to active substance or excipients."
+    ]
+  },
+  "monitoring": [
+    "Baseline labs per protocol (CBC, CMP)",
+    "Periodic assessment of liver enzymes",
+    "Clinical monitoring for infections"
+  ],
+  "version": "v1.8",
+  "doc_date": "2025-12-26"
+}

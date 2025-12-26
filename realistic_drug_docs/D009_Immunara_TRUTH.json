@@ -1,0 +1,90 @@
+{
+  "drug_id": "D009",
+  "drug_name": "Immunara",
+  "indication": "Immunology-F",
+  "modality": "monoclonal antibody",
+  "mechanism": "ligand neutralizing antibody",
+  "moa_short": "Neutralizes a circulating ligand to reduce pathway activation.",
+  "formulation": "vial for infusion",
+  "route": "intravenous",
+  "regimen": "3 mg/kg Q4W",
+  "trial_id": "AMGN-D009-302",
+  "phase": "Phase 2",
+  "arms": [
+    {
+      "name": "Immunara 3 mg/kg Q4W",
+      "n": 214,
+      "dose": "3 mg/kg Q4W"
+    },
+    {
+      "name": "Placebo",
+      "n": 206,
+      "dose": "matching regimen"
+    }
+  ],
+  "population": "Adults with moderate-to-severe Immunology-F with inadequate response to standard therapy.",
+  "key_inclusion": [
+    "Confirmed diagnosis per protocol definition",
+    "Baseline disease activity above threshold",
+    "Stable background therapy for \u22654 weeks"
+  ],
+  "key_exclusion": [
+    "Severe uncontrolled comorbidity (per protocol)",
+    "Recent major surgery within 12 weeks",
+    "Known hypersensitivity to components"
+  ],
+  "results": {
+    "endpoint_primary": "Change from baseline in Symptom Score at Week 12",
+    "endpoint_secondary": "Time to flare through Week 24",
+    "primary_effect": "LS mean difference -1.86 (Drug \u2212 Placebo)",
+    "primary_pvalue": 0.03667393899271156,
+    "primary_ci": "[-2.26, -1.46]",
+    "secondary_effect": "Numerically favored active arm; supportive trend",
+    "discontinuation_rate_pct": 11.073237895908902
+  },
+  "safety": {
+    "common_ae": [
+      [
+        "Upper respiratory infection",
+        11.758825406095836
+      ],
+      [
+        "Headache",
+        8.136592079092894
+      ],
+      [
+        "Rash",
+        8.002031521822593
+      ],
+      [
+        "Arthralgia",
+        6.346284022652081
+      ],
+      [
+        "Diarrhea",
+        6.239640984198547
+      ],
+      [
+        "Nausea",
+        6.750802495857167
+      ]
+    ],
+    "serious_ae_rate_pct": 2.982061458112159,
+    "discontinuation_ae_rate_pct": 1.090409904135188,
+    "warnings": [
+      "Monitor for hypersensitivity reactions.",
+      "Assess for infection risk in susceptible patients.",
+      "Consider hepatic monitoring if clinically indicated."
+    ],
+    "contraindications": [
+      "Known hypersensitivity to active substance or excipients."
+    ]
+  },
+  "monitoring": [
+    "Baseline labs per protocol (CBC, CMP)",
+    "Periodic assessment of liver enzymes",
+    "Clinical monitoring for infections"
+  ],
+  "version": "v2.8",
+  "doc_date": "2025-12-26"
+}

@@ -1,0 +1,90 @@
+{
+  "drug_id": "D006",
+  "drug_name": "Fenvora",
+  "indication": "Oncology-C",
+  "modality": "antibody-drug conjugate",
+  "mechanism": "targeted receptor antagonist",
+  "moa_short": "Blocks receptor-mediated signaling to reduce disease activity.",
+  "formulation": "prefilled syringe",
+  "route": "subcutaneous",
+  "regimen": "300 mg Q2W",
+  "trial_id": "AMGN-D006-201",
+  "phase": "Phase 2",
+  "arms": [
+    {
+      "name": "Fenvora 300 mg Q2W",
+      "n": 186,
+      "dose": "300 mg Q2W"
+    },
+    {
+      "name": "Placebo",
+      "n": 177,
+      "dose": "matching regimen"
+    }
+  ],
+  "population": "Adults with moderate-to-severe Oncology-C with inadequate response to standard therapy.",
+  "key_inclusion": [
+    "Confirmed diagnosis per protocol definition",
+    "Baseline disease activity above threshold",
+    "Stable background therapy for \u22654 weeks"
+  ],
+  "key_exclusion": [
+    "Severe uncontrolled comorbidity (per protocol)",
+    "Recent major surgery within 12 weeks",
+    "Known hypersensitivity to components"
+  ],
+  "results": {
+    "endpoint_primary": "Change from baseline in Symptom Score at Week 12",
+    "endpoint_secondary": "Time to flare through Week 24",
+    "primary_effect": "LS mean difference -1.35 (Drug \u2212 Placebo)",
+    "primary_pvalue": 0.023102923866582865,
+    "primary_ci": "[-1.75, -0.95]",
+    "secondary_effect": "Met nominal significance in hierarchical testing",
+    "discontinuation_rate_pct": 7.025049099900511
+  },
+  "safety": {
+    "common_ae": [
+      [
+        "Fatigue",
+        9.253097035082906
+      ],
+      [
+        "Upper respiratory infection",
+        6.434817473646747
+      ],
+      [
+        "Arthralgia",
+        5.623429329059172
+      ],
+      [
+        "Diarrhea",
+        6.017582016632869
+      ],
+      [
+        "Rash",
+        2.0
+      ],
+      [
+        "Headache",
+        2.0
+      ]
+    ],
+    "serious_ae_rate_pct": 1.803347732519081,
+    "discontinuation_ae_rate_pct": 4.945677155101382,
+    "warnings": [
+      "Monitor for hypersensitivity reactions.",
+      "Assess for infection risk in susceptible patients.",
+      "Consider hepatic monitoring if clinically indicated."
+    ],
+    "contraindications": [
+      "Known hypersensitivity to active substance or excipients."
+    ]
+  },
+  "monitoring": [
+    "Baseline labs per protocol (CBC, CMP)",
+    "Periodic assessment of liver enzymes",
+    "Clinical monitoring for infections"
+  ],
+  "version": "v2.1",
+  "doc_date": "2025-12-26"
+}

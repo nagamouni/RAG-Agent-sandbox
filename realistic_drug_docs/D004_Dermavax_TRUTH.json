@@ -1,0 +1,90 @@
+{
+  "drug_id": "D004",
+  "drug_name": "Dermavax",
+  "indication": "Autoimmune-A",
+  "modality": "bispecific antibody",
+  "mechanism": "targeted receptor antagonist",
+  "moa_short": "Blocks receptor-mediated signaling to reduce disease activity.",
+  "formulation": "prefilled syringe",
+  "route": "subcutaneous",
+  "regimen": "100 mg QW",
+  "trial_id": "AMGN-D004-302",
+  "phase": "Phase 3",
+  "arms": [
+    {
+      "name": "Dermavax 100 mg QW",
+      "n": 255,
+      "dose": "100 mg QW"
+    },
+    {
+      "name": "Placebo",
+      "n": 254,
+      "dose": "matching regimen"
+    }
+  ],
+  "population": "Adults with moderate-to-severe Autoimmune-A with inadequate response to standard therapy.",
+  "key_inclusion": [
+    "Confirmed diagnosis per protocol definition",
+    "Baseline disease activity above threshold",
+    "Stable background therapy for \u22654 weeks"
+  ],
+  "key_exclusion": [
+    "Severe uncontrolled comorbidity (per protocol)",
+    "Recent major surgery within 12 weeks",
+    "Known hypersensitivity to components"
+  ],
+  "results": {
+    "endpoint_primary": "Change from baseline in Symptom Score at Week 12",
+    "endpoint_secondary": "Time to flare through Week 24",
+    "primary_effect": "LS mean difference -1.00 (Drug \u2212 Placebo)",
+    "primary_pvalue": 0.048974205196812705,
+    "primary_ci": "[-1.40, -0.60]",
+    "secondary_effect": "Did not meet prespecified significance threshold",
+    "discontinuation_rate_pct": 8.894698173446958
+  },
+  "safety": {
+    "common_ae": [
+      [
+        "Upper respiratory infection",
+        6.16450023031658
+      ],
+      [
+        "Fatigue",
+        5.399856701008002
+      ],
+      [
+        "Nausea",
+        4.000228732334217
+      ],
+      [
+        "Elevated ALT",
+        2.914589879895847
+      ],
+      [
+        "Injection-site reaction",
+        2.0
+      ],
+      [
+        "Arthralgia",
+        2.0
+      ]
+    ],
+    "serious_ae_rate_pct": 1.6684771839890113,
+    "discontinuation_ae_rate_pct": 2.2612887827853863,
+    "warnings": [
+      "Monitor for hypersensitivity reactions.",
+      "Assess for infection risk in susceptible patients.",
+      "Consider hepatic monitoring if clinically indicated."
+    ],
+    "contraindications": [
+      "Known hypersensitivity to active substance or excipients."
+    ]
+  },
+  "monitoring": [
+    "Baseline labs per protocol (CBC, CMP)",
+    "Periodic assessment of liver enzymes",
+    "Clinical monitoring for infections"
+  ],
+  "version": "v2.9",
+  "doc_date": "2025-12-26"
+}

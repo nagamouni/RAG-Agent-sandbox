@@ -1,0 +1,90 @@
+{
+  "drug_id": "D007",
+  "drug_name": "Glucomet",
+  "indication": "Metabolic-D",
+  "modality": "small molecule",
+  "mechanism": "bispecific immune modulator",
+  "moa_short": "Engages two targets to rebalance immune signaling.",
+  "formulation": "tablet",
+  "route": "oral",
+  "regimen": "150 mg BID",
+  "trial_id": "AMGN-D007-201",
+  "phase": "Phase 2",
+  "arms": [
+    {
+      "name": "Glucomet 150 mg BID",
+      "n": 168,
+      "dose": "150 mg BID"
+    },
+    {
+      "name": "Placebo",
+      "n": 139,
+      "dose": "matching regimen"
+    }
+  ],
+  "population": "Adults with moderate-to-severe Metabolic-D with inadequate response to standard therapy.",
+  "key_inclusion": [
+    "Confirmed diagnosis per protocol definition",
+    "Baseline disease activity above threshold",
+    "Stable background therapy for \u22654 weeks"
+  ],
+  "key_exclusion": [
+    "Severe uncontrolled comorbidity (per protocol)",
+    "Recent major surgery within 12 weeks",
+    "Known hypersensitivity to components"
+  ],
+  "results": {
+    "endpoint_primary": "Change from baseline in Symptom Score at Week 12",
+    "endpoint_secondary": "Durable response at Week 24",
+    "primary_effect": "LS mean difference -1.37 (Drug \u2212 Placebo)",
+    "primary_pvalue": 0.018522917146641726,
+    "primary_ci": "[-1.77, -0.97]",
+    "secondary_effect": "Did not meet prespecified significance threshold",
+    "discontinuation_rate_pct": 10.438594306728483
+  },
+  "safety": {
+    "common_ae": [
+      [
+        "Arthralgia",
+        12.186591438703637
+      ],
+      [
+        "Elevated ALT",
+        10.950842969633943
+      ],
+      [
+        "Diarrhea",
+        9.631723643400758
+      ],
+      [
+        "Headache",
+        8.169591409090415
+      ],
+      [
+        "Nausea",
+        5.353654013999701
+      ],
+      [
+        "Rash",
+        4.6480320489138265
+      ]
+    ],
+    "serious_ae_rate_pct": 5.095076753420004,
+    "discontinuation_ae_rate_pct": 2.7689201197662947,
+    "warnings": [
+      "Monitor for hypersensitivity reactions.",
+      "Assess for infection risk in susceptible patients.",
+      "Consider hepatic monitoring if clinically indicated."
+    ],
+    "contraindications": [
+      "Known hypersensitivity to active substance or excipients."
+    ]
+  },
+  "monitoring": [
+    "Baseline labs per protocol (CBC, CMP)",
+    "Periodic assessment of liver enzymes",
+    "Clinical monitoring for infections"
+  ],
+  "version": "v2.9",
+  "doc_date": "2025-12-26"
+}
