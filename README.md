@@ -99,7 +99,13 @@ FastAPI -
 
 <img width="911" height="385" alt="image" src="https://github.com/user-attachments/assets/45be0303-ade3-462e-b493-72bac67434b8" />
 
-<img width="911" height="385" alt="image" src="https://github.com/user-attachments/assets/22f4f44e-0588-4807-ae2c-c289d881ad56" />
+<img width="940" height="512" alt="image" src="https://github.com/user-attachments/assets/4e553fe5-65af-4e9a-80f7-4ece9d1e150e" />
+
+
+<img width="940" height="518" alt="image" src="https://github.com/user-attachments/assets/24da89e6-52d2-4495-a212-42420d65aa46" />
+
+
+
 
 
 
