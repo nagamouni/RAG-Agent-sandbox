@@ -94,3 +94,11 @@ Prevented hallucinations by enforcing context-only generation
 4.	Add document versioning
 5.	Integrate frontend UI (React/Next.js)
 6.	Deploy using Docker/Kubernetes
+
+FastAPI -
+
+<img width="729" height="309" alt="image" src="https://github.com/user-attachments/assets/c9995bd3-7455-45cb-b00d-128693302e68" />
+
+
+
+
