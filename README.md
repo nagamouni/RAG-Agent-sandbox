@@ -97,7 +97,9 @@ Prevented hallucinations by enforcing context-only generation
 
 FastAPI -
 
-<img width="729" height="309" alt="image" src="https://github.com/user-attachments/assets/c9995bd3-7455-45cb-b00d-128693302e68" />
+<img width="911" height="385" alt="image" src="https://github.com/user-attachments/assets/45be0303-ade3-462e-b493-72bac67434b8" />
+
+
 
 
 
