@@ -14,6 +14,7 @@ The system runs locally and combines:
 <img width="500" height="431" alt="image" src="https://github.com/user-attachments/assets/c6289856-4af7-4e9a-b58c-9e3977e31d3b" />
 
 
+**Tools and Technologies Used**
 
 
 | Category              | Tool / Technology         | Purpose in This Project                                          |
@@ -48,6 +49,7 @@ Localhost -
 <img width="1915" height="1037" alt="image" src="https://github.com/user-attachments/assets/0456daaf-814c-4d5d-9141-68c38a8bab1b" />
 
 <img width="1910" height="1051" alt="image" src="https://github.com/user-attachments/assets/2b0b4e8f-9cc1-4a80-860a-3744acefeb67" />
+
 
 
 
