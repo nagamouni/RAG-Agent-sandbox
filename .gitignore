@@ -1,5 +1,16 @@
-.env
-.venv/
-__pycache__/
-*.pyc
+# Generated / sample data
+realistic_docs_hr/
+
+# Jupyter
 .ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+
+# OS / junk files
+Thumbs.db
+.DS_Store
+
+# Accidental files
+5

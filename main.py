@@ -2,6 +2,8 @@ import os
 from typing import Optional, List, Dict, Any
 
 from fastapi import FastAPI, HTTPException
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
 from pydantic import BaseModel, Field
 
 from pinecone import Pinecone
@@ -14,33 +16,41 @@ from openai import OpenAI
 PINECONE_API_KEY = os.environ.get("PINECONE_API_KEY")
 OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
 
-
 INDEX_NAME = os.environ.get("PINECONE_INDEX_NAME", "test-agent")
 NAMESPACE = os.environ.get("PINECONE_NAMESPACE", "toy-agent")
 
-# Pinecone embedding model used during ingestion (must match!)
+# Must match ingestion embedding model!
 PINECONE_EMBED_MODEL = os.environ.get("PINECONE_EMBED_MODEL", "llama-text-embed-v2")
 
 # LLM model for generation
 CHAT_MODEL = os.environ.get("OPENAI_CHAT_MODEL", "gpt-4o-mini")
 
 
-# -------------------------
-# Clients
-# -------------------------
 if not PINECONE_API_KEY:
     raise RuntimeError("Missing env var PINECONE_API_KEY")
 
-pc = Pinecone(api_key=PINECONE_API_KEY)
-index = pc.Index(INDEX_NAME)
-
+# OpenAI is required only for /generate (search-only still works without it)
 openai_client = OpenAI(api_key=OPENAI_API_KEY) if OPENAI_API_KEY else None
 
 
 # -------------------------
-# FastAPI
+# Clients
 # -------------------------
-app = FastAPI(title="Toy RAG Agent")
+pc = Pinecone(api_key=PINECONE_API_KEY)
+index = pc.Index(INDEX_NAME)
+
+
+# -------------------------
+# FastAPI + Static UI
+# -------------------------
+app = FastAPI(title="RAG Policy Agent (Pinecone embeddings + OpenAI LLM)")
+
+app.mount("/static", StaticFiles(directory="static"), name="static")
+
+
+@app.get("/")
+def home():
+    return FileResponse("static/index.html")
 
 
 # -------------------------
@@ -48,7 +58,7 @@ app = FastAPI(title="Toy RAG Agent")
 # -------------------------
 class SearchRequest(BaseModel):
     query: str = Field(..., min_length=1)
-    drug_id: Optional[str] = None
+    doc_id: Optional[str] = None
     top_k: int = 5
 
 
@@ -64,7 +74,7 @@ class SearchResponse(BaseModel):
 
 class GenerateRequest(BaseModel):
     query: str = Field(..., min_length=1)
-    drug_id: Optional[str] = None
+    doc_id: Optional[str] = None
     top_k: int = 5
 
 
@@ -76,10 +86,15 @@ class GenerateResponse(BaseModel):
 # -------------------------
 # Helpers
 # -------------------------
+def is_greeting(q: str) -> bool:
+    qn = q.strip().lower()
+    return qn in {"hi", "hello", "hey", "hii", "hiii", "yo", "good morning", "good evening"}
+
+
 def embed_query_with_pinecone(query: str) -> List[float]:
     """
-    Use Pinecone Inference to embed query.
-    Must match ingestion embedding model & dimensions.
+    Pinecone-hosted embedding model. No local Ollama required.
+    Must match ingestion model/dimensions.
     """
     emb = pc.inference.embed(
         model=PINECONE_EMBED_MODEL,
@@ -89,21 +104,21 @@ def embed_query_with_pinecone(query: str) -> List[float]:
     return emb.data[0].values
 
 
-def pinecone_search(query: str, drug_id: Optional[str], top_k: int):
+def pinecone_search(query: str, doc_id: Optional[str], top_k: int):
     qvec = embed_query_with_pinecone(query)
 
     flt = None
-    if drug_id:
-        flt = {"drug_id": {"$eq": drug_id}}
+    if doc_id:
+        # requires your metadata to include doc_id
+        flt = {"doc_id": {"$eq": doc_id}}
 
     res = index.query(
         vector=qvec,
         top_k=top_k,
         include_metadata=True,
         namespace=NAMESPACE,
-        filter=flt
+        filter=flt,
     )
-    # res is dict-like with "matches"
     return res
 
 
@@ -113,19 +128,23 @@ def build_context_from_matches(matches, max_chars: int = 6000) -> str:
     """
     parts = []
     used = 0
+
     for m in matches:
         md = (m.get("metadata") or {})
         chunk_text = md.get("text") or ""
-        source_files = md.get("source_files") or []
-        drug_id = md.get("drug_id")
-        doc_type = md.get("doc_type")
-        header = f"[drug_id={drug_id} doc_type={doc_type} source_files={source_files}]"
+        doc_id = md.get("doc_id")
+        file_name = md.get("file_name")
+        source_type = md.get("source_type")
+        chunk_index = md.get("chunk_index")
+
+        header = f"[doc_id={doc_id} file={file_name} type={source_type} chunk={chunk_index}]"
 
         snippet = (chunk_text[:1200] + "…") if len(chunk_text) > 1200 else chunk_text
         block = header + "\n" + snippet
 
         if used + len(block) > max_chars:
             break
+
         parts.append(block)
         used += len(block)
 
@@ -134,25 +153,31 @@ def build_context_from_matches(matches, max_chars: int = 6000) -> str:
 
 def llm_generate_answer(query: str, context: str) -> str:
     if openai_client is None:
-        raise HTTPException(status_code=500, detail="OPENAI_API_KEY not set; cannot generate answer.")
+        raise HTTPException(
+            status_code=500,
+            detail="OPENAI_API_KEY not set; cannot generate answers.",
+        )
 
     system = (
-        "You are a helpful assistant. Answer using ONLY the provided context. "
-        "If the context does not contain the answer, say you don't know."
+        "You are a helpful assistant for policy/SOP Q&A. "
+        "Use ONLY the provided context. "
+        "If the answer is not in the context, say: "
+        "\"I don't know based on the provided documents.\" "
+        "Be concise. Use bullets when helpful."
     )
 
-    user = f"""Context:
+    prompt = f"""CONTEXT:
 {context}
 
-User question:
+QUESTION:
 {query}
+"""
 
-Return a concise answer."""
     resp = openai_client.chat.completions.create(
         model=CHAT_MODEL,
         messages=[
             {"role": "system", "content": system},
-            {"role": "user", "content": user},
+            {"role": "user", "content": prompt},
         ],
         temperature=0.2,
     )
@@ -164,37 +189,65 @@ Return a concise answer."""
 # -------------------------
 @app.get("/health")
 def health():
-    return {"status": "ok", "index": INDEX_NAME, "namespace": NAMESPACE, "embed_model": PINECONE_EMBED_MODEL}
+    return {
+        "status": "ok",
+        "index": INDEX_NAME,
+        "namespace": NAMESPACE,
+        "embed_model": PINECONE_EMBED_MODEL,
+        "llm_model": CHAT_MODEL,
+        "openai_enabled": bool(OPENAI_API_KEY),
+    }
 
 
 @app.post("/search", response_model=SearchResponse)
 def search(req: SearchRequest):
-    res = pinecone_search(req.query, req.drug_id, req.top_k)
+    res = pinecone_search(req.query, req.doc_id, req.top_k)
+
     matches_out = []
     for m in res.get("matches", []):
-        matches_out.append(Match(id=m["id"], score=float(m["score"]), metadata=m.get("metadata") or {}))
+        matches_out.append(
+            Match(
+                id=m["id"],
+                score=float(m["score"]),
+                metadata=m.get("metadata") or {},
+            )
+        )
     return SearchResponse(matches=matches_out)
 
 
 @app.post("/generate", response_model=GenerateResponse)
 def generate(req: GenerateRequest):
-    res = pinecone_search(req.query, req.drug_id, req.top_k)
+    # Friendly fallback for greetings
+    if is_greeting(req.query):
+        return GenerateResponse(
+            answer="Hi! 👋 Ask me a question about the documents (policies/SOPs), and I’ll answer using the ingested content.",
+            citations=[],
+        )
+
+    res = pinecone_search(req.query, req.doc_id, req.top_k)
     matches = res.get("matches", [])
 
     if not matches:
-        return GenerateResponse(answer="I couldn't find relevant context in the vector database.", citations=[])
+        return GenerateResponse(
+            answer="I couldn't find relevant information in the documents.",
+            citations=[],
+        )
 
     context = build_context_from_matches(matches)
-
     answer = llm_generate_answer(req.query, context)
 
-    # citations: return match metadata + id/score (simple)
     citations = []
     for m in matches:
-        citations.append({
-            "id": m["id"],
-            "score": float(m["score"]),
-            "metadata": m.get("metadata") or {}
-        })
+        md = m.get("metadata") or {}
+        citations.append(
+            {
+                "id": m.get("id"),
+                "score": float(m.get("score", 0.0)),
+                "doc_id": md.get("doc_id"),
+                "file_name": md.get("file_name"),
+                "source_type": md.get("source_type"),
+                "chunk_index": md.get("chunk_index"),
+            }
+        )
 
     return GenerateResponse(answer=answer, citations=citations)
