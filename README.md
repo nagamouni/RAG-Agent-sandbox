@@ -95,14 +95,17 @@ Prevented hallucinations by enforcing context-only generation
 5.	Integrate frontend UI (React/Next.js)
 6.	Deploy using Docker/Kubernetes
 
-FastAPI -
-
-<img width="911" height="385" alt="image" src="https://github.com/user-attachments/assets/45be0303-ade3-462e-b493-72bac67434b8" />
-
-<img width="940" height="512" alt="image" src="https://github.com/user-attachments/assets/4e553fe5-65af-4e9a-80f7-4ece9d1e150e" />
+Localhost -
 
 
-<img width="940" height="518" alt="image" src="https://github.com/user-attachments/assets/24da89e6-52d2-4495-a212-42420d65aa46" />
+
+<img width="1915" height="1037" alt="image" src="https://github.com/user-attachments/assets/0456daaf-814c-4d5d-9141-68c38a8bab1b" />
+
+
+
+<img width="1910" height="1051" alt="image" src="https://github.com/user-attachments/assets/2b0b4e8f-9cc1-4a80-860a-3744acefeb67" />
+
+
 
 
 
