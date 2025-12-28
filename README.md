@@ -13,18 +13,20 @@ The system runs locally and combines:
 
 <img width="500" height="431" alt="image" src="https://github.com/user-attachments/assets/c6289856-4af7-4e9a-b58c-9e3977e31d3b" />
 
-1)	Design Principles
-2)	No Hallucination: Answers are generated strictly from retrieved context
-3)	Explainability: Source documents are returned as citations
-4)	Consistency: Same embedding model is used for ingestion and querying
-5)	Separation of Concerns: Retrieval and generation are independent layers
-6)	Enterprise-Ready: Deterministic, auditable, and extensible design
+
+**Design Principles**
+1)	No Hallucination: Answers are generated strictly from retrieved context
+2)	Explainability: Source documents are returned as citations
+3)	Consistency: Same embedding model is used for ingestion and querying
+4)	Separation of Concerns: Retrieval and generation are independent layers
+5)	Enterprise-Ready: Deterministic, auditable, and extensible design
 
 Localhost -
 
 <img width="1915" height="1037" alt="image" src="https://github.com/user-attachments/assets/0456daaf-814c-4d5d-9141-68c38a8bab1b" />
 
 <img width="1910" height="1051" alt="image" src="https://github.com/user-attachments/assets/2b0b4e8f-9cc1-4a80-860a-3744acefeb67" />
+
 
 
 
